@@ -984,7 +984,7 @@ test("static catalog and server database include the sourced Dagupan guide", asy
   assert.equal(new Set(catalog.map((restaurant) => restaurant.slug)).size, catalog.length);
   assert.equal(catalog.filter((restaurant) => restaurant.sourceUrl).length, 30);
   assert.ok(catalog.every((restaurant) => restaurant.rating === 0 && restaurant.reviewCount === 0));
-  assert.ok(catalog.filter((restaurant) => restaurant.priceMin > 0).length >= 25);
+  assert.equal(catalog.filter((restaurant) => restaurant.priceMin > 0).length, catalog.length);
   const representativeRestaurants = catalog.filter((restaurant) => restaurant.id > 3);
   assert.equal(representativeRestaurants.length, 28);
   for (const restaurant of representativeRestaurants) {
