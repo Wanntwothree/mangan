@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System monitoring · MANGAN</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/dashboard.css?v=6">
+  <script src="demo-store.js?v=2" defer></script>
+  <script src="admin.js?v=7" defer></script>
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 15.5h22c-.5 7-4.8 11-11 11s-10.5-4-11-11Z"/><path d="M9 11.5c1-2 2-2 3 0s2 2 3 0 2-2 3 0 2 2 3 0 2-2 3 0M8 7.5c1-2 2-2 3 0m10 0c1-2 2-2 3 0"/></svg></span><span class="brand-word">mangan<span>.</span></span></a>
+    <nav class="dashboard-nav"><a href="index.html">Public site ↗</a><button id="logout-button" type="button">Log out</button></nav>
+  </header>
+  <main class="dashboard-main">
+    <section class="dashboard-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> ADMIN CONTROL ROOM</p><h1>Keep the table in good shape.</h1></div><p>Monitor community activity, review owner submissions, and keep listings clear and useful.</p></section>
+    <p class="dashboard-notice">Admin accounts are created only from server environment settings. Verify venue details before approving owner submissions.</p>
+    <section class="stat-grid" aria-label="System overview">
+      <article class="stat-card"><span>Food lovers</span><strong id="stat-users">—</strong></article>
+      <article class="stat-card"><span>Restaurant owners</span><strong id="stat-owners">—</strong></article>
+      <article class="stat-card"><span>Restaurant listings</span><strong id="stat-restaurants">—</strong></article>
+      <article class="stat-card"><span>Waiting for review</span><strong id="stat-pending">—</strong></article>
+    </section>
+    <p class="dashboard-message" id="admin-message" aria-live="polite"></p>
+    <section class="dashboard-card">
+      <header class="dashboard-card-heading"><div><h2>Restaurant review queue</h2><p>Edit, approve, reject, or delete restaurant listings and owner submissions.</p></div></header>
+      <div class="table-scroll" id="admin-restaurants"></div>
+    </section>
+    <section class="dashboard-card">
+      <header class="dashboard-card-heading"><div><h2>Account monitoring</h2><p>Suspend, restore, or permanently delete customer and owner accounts.</p></div></header>
+      <div class="table-scroll" id="admin-users"></div>
+    </section>
+    <section class="dashboard-card">
+      <header class="dashboard-card-heading"><div><h2>Community feedback</h2><p id="feedback-count">Recent notes from MANGAN visitors.</p></div></header>
+      <div class="dashboard-content"><div class="feedback-list" id="admin-feedback"></div></div>
+    </section>
+    <dialog class="admin-edit-dialog" id="admin-restaurant-dialog" aria-labelledby="admin-edit-title">
+      <div class="admin-edit-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> LISTING DETAILS</p><h2 id="admin-edit-title">Edit restaurant</h2></div>
+        <button class="dashboard-secondary" id="admin-edit-close" type="button">Close</button>
+      </div>
+      <p class="dashboard-message" id="admin-edit-message" aria-live="polite"></p>
+      <form class="owner-form" id="admin-restaurant-form">
+        <input type="hidden" name="restaurantId">
+        <label>Restaurant name<input name="name" minlength="3" maxlength="100" required></label>
+        <label>Neighborhood or area<input name="neighborhood" minlength="2" maxlength="100" required></label>
+        <label class="span-two">Full address<input name="address" minlength="5" maxlength="240" required></label>
+        <label class="span-two">Short description<textarea name="description" minlength="15" maxlength="500" required></textarea></label>
+        <label>Estimated minimum price (₱)<input name="priceMin" type="number" min="0" max="100000" step="1" required></label>
+        <label>Estimated maximum price (₱)<input name="priceMax" type="number" min="0" max="100000" step="1" required></label>
+        <label>Opening hours<input name="hours" maxlength="100" required></label>
+        <label>Source URL<input name="sourceUrl" type="url" maxlength="2048" placeholder="https://"></label>
+        <label>Food image path<input name="imageUrl" maxlength="100" required></label>
+        <label>Restaurant image path<input name="venueImageUrl" maxlength="100" required></label>
+        <label>Map latitude (optional)<input name="latitude" type="number" min="-90" max="90" step="any"></label>
+        <label>Map longitude (optional)<input name="longitude" type="number" min="-180" max="180" step="any"></label>
+        <div class="span-two">
+          <span class="auth-form-label">Food categories</span>
+          <div class="category-checks">
+            <label><input name="categories" type="checkbox" value="meat"> Meat</label>
+            <label><input name="categories" type="checkbox" value="seafood"> Seafood</label>
+            <label><input name="categories" type="checkbox" value="drinks"> Drinks</label>
+            <label><input name="categories" type="checkbox" value="dessert"> Dessert</label>
+          </div>
+        </div>
+        <label class="span-two">Highlights <span class="auth-hint">Separate up to five short highlights with commas.</span><input name="highlights" maxlength="300"></label>
+        <div class="span-two">
+          <span class="auth-form-label">Listing settings</span>
+          <div class="category-checks">
+            <label><input name="isOpen" type="checkbox"> Currently open</label>
+            <label><input name="featured" type="checkbox"> Local favorite</label>
+          </div>
+        </div>
+        <div class="owner-form-actions">
+          <button class="dashboard-primary" id="admin-edit-submit" type="submit">Save changes</button>
+          <button class="dashboard-secondary" id="admin-edit-cancel" type="button">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+</body>
+</html>
