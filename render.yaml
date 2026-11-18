@@ -10,9 +10,9 @@ services:
       - key: HOST
         value: 0.0.0.0
       - key: ADMIN_EMAIL
-        sync: false
+        value: admin@mangan.com
       - key: ADMIN_PASSWORD
-        sync: false
+        value: admin_123
       - key: GEOCODER_USER_AGENT
         value: "MANGAN/1.0 (add your contact email or URL)"
       - key: WEATHER_USER_AGENT
