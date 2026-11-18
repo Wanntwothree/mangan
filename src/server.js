@@ -9,6 +9,7 @@ const { createGoogleMapsService } = require("./google-maps-service");
 const { createNominatimService } = require("./nominatim-service");
 const { createRestaurantRepository } = require("./restaurant-repository");
 const { createWeatherService } = require("./weather-service");
+const { createMailerFromEnvironment } = require("./mail-service");
 
 const publicDirectory = path.join(__dirname, "..", "public");
 const databasePath = process.env.DATABASE_PATH || path.join(__dirname, "..", "data", "mangan.sqlite");
@@ -268,6 +269,7 @@ function createApp(options = {}) {
     })
     : createNominatimService({ userAgent: process.env.GEOCODER_USER_AGENT || "MANGAN/1.0" }));
   const weather = options.weatherService || createWeatherService();
+  const mailer = options.mailer || createMailerFromEnvironment();
   const publicGeocodeLimits = new Map();
   const geocodeRateLimits = new Map();
   const configuredAdminPassword = process.env.ADMIN_PASSWORD;
@@ -310,7 +312,7 @@ function createApp(options = {}) {
 
     try {
       if (url.pathname.startsWith("/api/")) {
-        await handleApi(request, response, url, repository, auth, database, maps, weather, geocodeRateLimits, publicGeocodeLimits, uploadDirectory);
+        await handleApi(request, response, url, repository, auth, database, maps, weather, mailer, geocodeRateLimits, publicGeocodeLimits, uploadDirectory);
         return;
       }
 
@@ -370,7 +372,7 @@ function authorizedUser(request, response, auth, role) {
   return user;
 }
 
-async function handleApi(request, response, url, repository, auth, database, maps, weather, geocodeRateLimits, publicGeocodeLimits, uploadDirectory) {
+async function handleApi(request, response, url, repository, auth, database, maps, weather, mailer, geocodeRateLimits, publicGeocodeLimits, uploadDirectory) {
   if (request.method === "GET" && url.pathname === "/api/auth/me") {
     sendJson(response, 200, { user: auth.userForSession(cookieValue(request, sessionCookie)) });
     return;
@@ -402,15 +404,31 @@ async function handleApi(request, response, url, repository, auth, database, map
   }
 
   if (request.method === "POST" && url.pathname === "/api/auth/forgot") {
-    if (process.env.NODE_ENV === "production") {
-      throw new AuthError(503, "Password recovery email is not configured. Contact the MANGAN administrator.");
-    }
     const body = await readJson(request);
-    const code = auth.requestPasswordReset(body.email);
-    sendJson(response, 200, {
-      message: "If the account exists, a local reset code is ready.",
-      ...(code && { developmentCode: code })
-    });
+    const email = typeof body.email === "string" ? body.email.trim() : "";
+    const code = auth.requestPasswordReset(email);
+    const genericMessage = "If that email belongs to an account, a reset code has been sent.";
+    if (!code) {
+      sendJson(response, 200, { message: genericMessage });
+      return;
+    }
+    if (!mailer.isConfigured()) {
+      sendJson(response, 200, {
+        message: "Email delivery is not configured, so your reset code is shown here.",
+        developmentCode: code
+      });
+      return;
+    }
+    try {
+      await mailer.sendPasswordResetCode({ to: email, code });
+      sendJson(response, 200, { message: genericMessage });
+    } catch (error) {
+      console.error("Password recovery email could not be sent:", error.message);
+      sendJson(response, 200, {
+        message: "The email could not be sent, so your reset code is shown here.",
+        developmentCode: code
+      });
+    }
     return;
   }
 

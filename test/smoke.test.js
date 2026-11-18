@@ -1,5 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
+const net = require("node:net");
 const os = require("node:os");
 const path = require("node:path");
 const { after, before, test } = require("node:test");
@@ -7,6 +8,7 @@ const { createApp } = require("../src/server");
 const { createGoogleMapsService } = require("../src/google-maps-service");
 const { createNominatimService } = require("../src/nominatim-service");
 const { createWeatherService } = require("../src/weather-service");
+const { createSmtpMailer } = require("../src/mail-service");
 
 const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "mangan-beta-"));
 const databasePath = path.join(temporaryDirectory, "test.sqlite");
@@ -954,6 +956,152 @@ test("forgot password codes expire after a successful password reset", async () 
   });
   assert.equal(login.status, 200);
   assert.equal((await login.json()).user.role, "user");
+});
+
+function startFakeSmtpServer() {
+  const messages = [];
+  const server = net.createServer((socket) => {
+    socket.write("220 fake ESMTP\r\n");
+    let buffer = "";
+    let authStep = 0;
+    let inData = false;
+    let dataLines = [];
+    socket.on("data", (chunk) => {
+      buffer += chunk.toString("utf8");
+      while (true) {
+        const index = buffer.indexOf("\r\n");
+        if (index < 0) break;
+        const line = buffer.slice(0, index);
+        buffer = buffer.slice(index + 2);
+        if (inData) {
+          if (line === ".") {
+            inData = false;
+            messages.push(dataLines.join("\r\n"));
+            dataLines = [];
+            socket.write("250 OK\r\n");
+          } else {
+            dataLines.push(line);
+          }
+          continue;
+        }
+        if (authStep === 1) {
+          authStep = 2;
+          socket.write("334 UGFzc3dvcmQ6\r\n");
+          continue;
+        }
+        if (authStep === 2) {
+          authStep = 0;
+          socket.write("235 2.7.0 Authentication successful\r\n");
+          continue;
+        }
+        const command = line.split(" ")[0].toUpperCase();
+        if (command === "EHLO") {
+          socket.write("250-fake\r\n250 AUTH LOGIN\r\n");
+        } else if (command === "AUTH") {
+          authStep = 1;
+          socket.write("334 VXNlcm5hbWU6\r\n");
+        } else if (command === "DATA") {
+          inData = true;
+          socket.write("354 End data with <CR><LF>.<CR><LF>\r\n");
+        } else if (command === "QUIT") {
+          socket.write("221 Bye\r\n");
+          socket.end();
+        } else {
+          socket.write("250 OK\r\n");
+        }
+      }
+    });
+  });
+  return { server, messages };
+}
+
+test("SMTP mailer delivers the password reset code over a real SMTP session", async () => {
+  const { server, messages } = startFakeSmtpServer();
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  try {
+    const mailer = createSmtpMailer({
+      host: "127.0.0.1",
+      port: server.address().port,
+      secure: false,
+      user: "sender@example.test",
+      password: "app-password",
+      from: "sender@example.test",
+      name: "MANGAN"
+    });
+    assert.equal(mailer.isConfigured(), true);
+    await mailer.sendPasswordResetCode({ to: "owner@example.test", code: "123456" });
+    assert.equal(messages.length, 1);
+    assert.match(messages[0], /Your MANGAN password reset code is 123456/);
+    assert.match(messages[0], /To: owner@example\.test/);
+    assert.match(messages[0], /Subject: =\?UTF-8\?B\?/);
+  } finally {
+    await new Promise((resolve) => server.close(resolve));
+  }
+});
+
+test("password recovery emails the code and keeps the public response generic", async () => {
+  const sent = [];
+  const mailer = {
+    isConfigured: () => true,
+    async sendPasswordResetCode(details) {
+      sent.push(details);
+    }
+  };
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "mangan-mail-"));
+  const email = "mail-owner@example.test";
+  const originalAdminEmail = process.env.ADMIN_EMAIL;
+  const originalAdminPassword = process.env.ADMIN_PASSWORD;
+  let instance;
+  try {
+    process.env.ADMIN_EMAIL = "mail-admin@example.test";
+    process.env.ADMIN_PASSWORD = "MailAdmin!2026Strong";
+    instance = createApp({
+      databasePath: path.join(directory, "test.sqlite"),
+      uploadDirectory: path.join(directory, "uploads"),
+      mapsService,
+      weatherService,
+      mailer
+    });
+    await new Promise((resolve) => instance.server.listen(0, "127.0.0.1", resolve));
+    const url = `http://127.0.0.1:${instance.server.address().port}`;
+    const headers = { "Content-Type": "application/json" };
+
+    const register = await fetch(`${url}/api/auth/register`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ name: "Mail Owner", email, password: "MailOwner!2026", role: "owner" })
+    });
+    assert.equal(register.status, 201);
+
+    const forgot = await fetch(`${url}/api/auth/forgot`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ email })
+    });
+    assert.equal(forgot.status, 200);
+    const result = await forgot.json();
+    assert.equal(result.developmentCode, undefined);
+    assert.equal(sent.length, 1);
+    assert.equal(sent[0].to, email);
+    assert.match(sent[0].code, /^\d{6}$/);
+
+    const reset = await fetch(`${url}/api/auth/reset`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ email, code: sent[0].code, password: "BrandNew!2026Pass" })
+    });
+    assert.equal(reset.status, 200);
+  } finally {
+    if (originalAdminEmail === undefined) delete process.env.ADMIN_EMAIL;
+    else process.env.ADMIN_EMAIL = originalAdminEmail;
+    if (originalAdminPassword === undefined) delete process.env.ADMIN_PASSWORD;
+    else process.env.ADMIN_PASSWORD = originalAdminPassword;
+    if (instance) {
+      if (instance.server.listening) await new Promise((resolve) => instance.server.close(resolve));
+      instance.database.close();
+    }
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
 });
 
 test("static file access stays inside the public directory", async () => {

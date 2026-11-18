@@ -57,11 +57,13 @@ node server.js
 
 On an existing database, any previously configured or reset admin password
 remains in effect; the default is not reapplied on every server start.
-In local development, password recovery shows a reset code on screen. Email
-delivery is not configured, so password recovery returns an error when
-`NODE_ENV=production`. Before deploying publicly, configure email recovery,
-HTTPS, and unique administrator credentials; do not use the local default
-credentials for a public service.
+Password recovery emails a 6-digit reset code when SMTP is configured. Set
+`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, and `MAIL_FROM` (see
+`DEPLOY.md` for Gmail App Password setup). Without those values the code is
+shown on screen as a fallback so recovery still works locally and on a fresh
+deployment. Before deploying publicly, configure email recovery, HTTPS, and
+unique administrator credentials; do not use the local default credentials for
+a public service.
 
 ## Roles and walkthrough
 
@@ -107,7 +109,7 @@ The browser uses same-origin JSON endpoints:
 
 - `GET /api/health`, `GET /api/auth/me`
 - `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`
-- `POST /api/auth/forgot`, `POST /api/auth/reset` (development only)
+- `POST /api/auth/forgot` (emails a code when SMTP is configured, otherwise shows it in the response), `POST /api/auth/reset`
 - `GET /api/restaurants?q=&category=&sort=`
 - `GET /api/restaurants/:id/location` (approved restaurant location; geocoded and cached on first request when configured)
 - `GET /api/restaurants/nearby?lat=&lng=&radiusKm=` (approved, geocoded listings; radius 0.1–100 km)

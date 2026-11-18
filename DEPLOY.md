@@ -69,8 +69,14 @@ a hosted database/object storage for permanent data.
   environment variable and redeploying is enough to rotate it. If no admin
   password variable is configured in production, the local default is applied —
   always set a unique value before exposing the app publicly.
-- Configure email delivery before enabling `/api/auth/forgot` in production;
-  it intentionally returns `503` until then.
+- Password recovery emails are sent over SMTP. For Gmail, use
+  `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=465`, set `SMTP_USER` to the sending
+  Gmail address, `SMTP_PASSWORD` to a Gmail **App Password** (not the account
+  password), and `MAIL_FROM` to the same address. `MAIL_FROM_NAME` defaults to
+  `MANGAN`. Until those values are set, `/api/auth/forgot` shows the reset code
+  on screen as a fallback so recovery still works; once configured, the code is
+  emailed and the public response stays generic. SMTP settings are read at
+  startup and kept server-side only.
 - Set `GEOCODER_USER_AGENT` and `WEATHER_USER_AGENT` with contact details, and
   review the Open-Meteo non-commercial terms if the app is used commercially.
 
