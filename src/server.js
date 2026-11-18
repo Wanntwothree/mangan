@@ -96,9 +96,7 @@ function validateRestaurant(body, { allowRepresentativeImages = false, allowUnkn
   const imageUrl = galleryImage("imageUrl");
   const venueImageUrl = galleryImage("venueImageUrl") || imageUrl;
   const isAllowedImage = (value) => restaurantImages.has(value) ||
-    (allowRepresentativeImages &&
-      /^\/images\/representative\/[a-z0-9-]+\.jpg$/.test(value) &&
-      fs.existsSync(path.join(publicDirectory, value.slice(1)))) ||
+    (allowRepresentativeImages && isExistingPublicImage(value)) ||
     /^\/uploads\/[a-f0-9-]{36}\.(?:jpg|png|webp)$/.test(value);
 
   if (name.length < 3 || neighborhood.length < 2 || address.length < 5) {
@@ -123,6 +121,13 @@ function validateRestaurant(body, { allowRepresentativeImages = false, allowUnkn
     throw new AuthError(400, "Choose a food category and upload valid restaurant photos.");
   }
   return { name, neighborhood, address, description, hours, priceMin, priceMax, categories: categoriesValue, highlights, imageUrl, venueImageUrl, latitude, longitude };
+}
+
+function isExistingPublicImage(value) {
+  if (!/^\/images\//.test(value) || value.includes("..")) return false;
+  const imagesDirectory = path.join(publicDirectory, "images");
+  const imagePath = path.resolve(publicDirectory, value.slice(1));
+  return imagePath.startsWith(`${imagesDirectory}${path.sep}`) && fs.existsSync(imagePath);
 }
 
 function validateAdminRestaurant(body) {

@@ -26,6 +26,13 @@ async function adminApi(url, options = {}) {
     throw error;
   }
   const result = await response.json();
+  if (response.status === 401) {
+    const error = new Error("Your session has expired. Sign in again to continue.");
+    error.unauthorized = true;
+    if (localStore) localStore.clearCurrentUser();
+    window.location.replace("login.html?next=admin.html");
+    throw error;
+  }
   if (!response.ok) throw new Error(result.error || "That request could not be completed.");
   return result;
 }
@@ -258,15 +265,21 @@ document.querySelector("#logout-button").addEventListener("click", async () => {
 });
 
 async function resolveAdminUser() {
-  const localUser = localStore ? localStore.getCurrentUser() : null;
-  if (localUser) return localUser;
   try {
     const { user } = await adminApi("api/auth/me");
-    return user && localStore ? localStore.setCurrentUser(user) : user;
+    if (user) {
+      if (localStore) localStore.setCurrentUser(user);
+      return user;
+    }
   } catch (error) {
-    if (error.offline) return null;
-    throw error;
+    if (!error.offline) throw error;
+    // Static XAMPP hosting has no API: use the locally stored demo user.
+    return localStore ? localStore.getCurrentUser() : null;
   }
+  // The server is reachable and says we are signed out, so the locally saved
+  // account is stale (for example after a redeploy cleared the session).
+  if (localStore) localStore.clearCurrentUser();
+  return null;
 }
 
 async function startAdminPage() {

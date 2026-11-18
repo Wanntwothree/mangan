@@ -928,6 +928,73 @@ test("owner submissions require admin approval and display PHP price ranges", as
   assert.equal(deletedPublicList.restaurants.length, 31);
 });
 
+test("admin can save an unchanged edit to a seeded restaurant with a legacy image", async () => {
+  const login = await fetch(`${baseUrl}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: "mangan-admin@example.test", password: "AdminBeta!2026VeryStrong" })
+  });
+  assert.equal(login.status, 200);
+  const cookie = login.headers.get("set-cookie").split(";")[0];
+  const overview = await fetch(`${baseUrl}/api/admin/overview`, { headers: { Cookie: cookie } })
+    .then((response) => response.json());
+  const legacy = overview.restaurants.find((restaurant) => /^\/images\/(?!representative\/)/.test(restaurant.imageUrl));
+  assert.ok(legacy, "expected a seeded restaurant using a legacy image path");
+  const edit = await fetch(`${baseUrl}/api/admin/restaurants/${legacy.id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json", Cookie: cookie },
+    body: JSON.stringify({
+      name: legacy.name,
+      neighborhood: legacy.neighborhood,
+      address: legacy.address,
+      description: legacy.description,
+      priceMin: legacy.priceMin,
+      priceMax: legacy.priceMax,
+      hours: legacy.hours,
+      sourceUrl: legacy.sourceUrl || "",
+      imageUrl: legacy.imageUrl,
+      venueImageUrl: legacy.venueImageUrl,
+      latitude: legacy.latitude,
+      longitude: legacy.longitude,
+      categories: legacy.categories,
+      highlights: legacy.highlights,
+      isOpen: legacy.isOpen,
+      featured: legacy.featured
+    })
+  });
+  assert.equal(edit.status, 200, await edit.text());
+});
+
+test("rejects an admin edit that points to a missing image", async () => {
+  const login = await fetch(`${baseUrl}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: "mangan-admin@example.test", password: "AdminBeta!2026VeryStrong" })
+  });
+  assert.equal(login.status, 200);
+  const cookie = login.headers.get("set-cookie").split(";")[0];
+  const edit = await fetch(`${baseUrl}/api/admin/restaurants/1`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json", Cookie: cookie },
+    body: JSON.stringify({
+      name: "House of Bangus",
+      neighborhood: "Calasiao (near Dagupan)",
+      address: "RBA Paramount Building, Old De Venecia Highway, Calasiao",
+      description: "A nearby Calasiao restaurant known for Pangasinan bangus dishes.",
+      priceMin: 220,
+      priceMax: 520,
+      hours: "Confirm current hours with the restaurant.",
+      imageUrl: "/images/does-not-exist.jpg",
+      venueImageUrl: "/images/does-not-exist.jpg",
+      categories: ["seafood"],
+      highlights: [],
+      isOpen: true,
+      featured: true
+    })
+  });
+  assert.equal(edit.status, 400);
+});
+
 test("forgot password codes expire after a successful password reset", async () => {
   const forgot = await fetch(`${baseUrl}/api/auth/forgot`, {
     method: "POST",
