@@ -38,6 +38,24 @@ request. Replace it with unique credentials before any permanent deployment.
 - A regression test covers POST requests through an HTTPS proxy, and a
   mismatched `Origin` is still rejected.
 
+## Stable `mangan` domain
+
+A Cloudflare quick tunnel cannot use a chosen name. For a stable link containing
+`mangan`, deploy the repo to Render: `render.yaml` names the service `mangan`, so
+Render publishes it at **https://mangan.onrender.com**.
+
+1. Push this repo (already initialized on `main`) to GitHub/GitLab.
+2. In Render, create a **Web Service** from that repo — it will pick up
+   `render.yaml` automatically.
+3. Fill in the `ADMIN_EMAIL` and `ADMIN_PASSWORD` values when prompted, then
+   deploy. Render sets `PORT` and provides HTTPS.
+4. If `mangan.onrender.com` is already taken, Render will append a suffix; use a
+   custom domain or pick another host name.
+
+Note: on Render's free plan the filesystem is ephemeral, so SQLite data and
+owner uploads reset on each deploy. Add a persistent disk (paid plan) or move to
+a hosted database/object storage for permanent data.
+
 ## Before a permanent public deployment
 
 - Use a named Cloudflare tunnel or a PaaS (Render, Railway, Fly) with a real
