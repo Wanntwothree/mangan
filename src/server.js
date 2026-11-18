@@ -271,10 +271,11 @@ function createApp(options = {}) {
   const publicGeocodeLimits = new Map();
   const geocodeRateLimits = new Map();
   const configuredAdminPassword = process.env.ADMIN_PASSWORD;
+  const enforceAdminPassword = Boolean(configuredAdminPassword) || process.env.NODE_ENV === "production";
   auth.seedAdmin(
     process.env.ADMIN_EMAIL || "admin@mangan.com",
     configuredAdminPassword || "admin_123",
-    { enforcePassword: Boolean(configuredAdminPassword) }
+    { enforcePassword: enforceAdminPassword }
   );
 
   const server = http.createServer(async (request, response) => {
