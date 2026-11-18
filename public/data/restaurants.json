@@ -1,921 +1,921 @@
 [
-  {
-    "id": 1,
-    "slug": "house-of-bangus",
-    "name": "House of Bangus",
-    "neighborhood": "Calasiao (near Dagupan)",
-    "address": "RBA Paramount Building, Old De Venecia Highway, Calasiao",
-    "description": "A nearby Calasiao restaurant known for Pangasinan bangus dishes.",
-    "imageUrl": "images/bangus-relleno-all-natural-food.jpg",
-    "venueImageUrl": "images/bangus-relleno-all-natural-restaurant.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat"
-    ],
-    "highlights": [
-      "Bangus dishes",
-      "Neighboring Calasiao"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": true,
-    "status": "approved",
-    "latitude": 16.0180041,
-    "longitude": 120.3382513
-  },
-  {
-    "id": 2,
-    "slug": "ciudad-elmina",
-    "name": "Ciudad Elmina Restaurant",
-    "neighborhood": "Bacayao Norte, Dagupan City",
-    "address": "Bacayao Norte Road, Bacayao Norte, Dagupan City",
-    "description": "A Filipino and seafood restaurant with floating-village-style dining.",
-    "imageUrl": "images/ciudad-elmina-food.jpg",
-    "venueImageUrl": "images/ciudad-elmina-restaurant.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "drinks",
-      "dessert"
-    ],
-    "highlights": [
-      "Filipino dishes",
-      "Seafood"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": true,
-    "status": "approved",
-    "latitude": 16.0345605,
-    "longitude": 120.3441752,
-    "sourceUrl": "https://www.facebook.com/CiudadElminaFishingVillage/"
-  },
-  {
-    "id": 3,
-    "slug": "matutina-gerrys",
-    "name": "Matutina's and Gerry's Seafood House",
-    "neighborhood": "Pantal, Dagupan City",
-    "address": "De Venecia Road Extension, Barangay Pantal, Dagupan City",
-    "description": "A seafood restaurant serving Filipino dishes and bangus specialties.",
-    "imageUrl": "images/matutina-s-and-gerry-food.jpg",
-    "venueImageUrl": "images/matutina-s-and-gerry-restaurant.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat",
-      "drinks"
-    ],
-    "highlights": [
-      "Seafood",
-      "Bangus specialties"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0552954,
-    "longitude": 120.3374765,
-    "sourceUrl": "https://matutinagerryseafood.com/"
-  },
-  {
-    "id": 4,
-    "slug": "silverios-seafoods",
-    "name": "Silverio's Seafoods Restaurant",
-    "neighborhood": "Dagupan City",
-    "address": "56 Arellano Street, Dagupan City",
-    "description": "A Dagupan seafood restaurant whose public listing notes it was established in 1996.",
-    "imageUrl": "images/representative/silverios-seafoods.jpg",
-    "venueImageUrl": "images/representative/silverios-seafoods.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood"
-    ],
-    "highlights": [
-      "Seafood"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.058418,
-    "longitude": 120.3400588,
-    "sourceUrl": "https://www.facebook.com/silveriosseafoodsrestaurantinc/"
-  },
-  {
-    "id": 5,
-    "slug": "jacobos-seafood-grill",
-    "name": "Jacobo's Seafood Grill",
-    "neighborhood": "Pantal, Dagupan City",
-    "address": "Judge Jose de Venecia Boulevard Extension, Barangay Pantal, Dagupan City",
-    "description": "A Filipino restaurant serving seafood and grilled dishes.",
-    "imageUrl": "images/representative/jacobos-seafood-grill.jpg",
-    "venueImageUrl": "images/representative/jacobos-seafood-grill.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat"
-    ],
-    "highlights": [
-      "Seafood",
-      "Grilled dishes"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": null,
-    "longitude": null,
-    "sourceUrl": "https://www.yelp.com/biz/jacobos-seafood-grill-dagupan-city"
-  },
-  {
-    "id": 6,
-    "slug": "kuya-max-grill",
-    "name": "Kuya Max Grill and Restaurant",
-    "neighborhood": "Dagupan City",
-    "address": "Judge Jose de Venecia Avenue, Dagupan City",
-    "description": "A Dagupan grill serving Filipino favorites and seafood.",
-    "imageUrl": "images/representative/kuya-max-grill.jpg",
-    "venueImageUrl": "images/representative/kuya-max-grill.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat"
-    ],
-    "highlights": [
-      "Grilled dishes",
-      "Filipino food"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.019274,
-    "longitude": 120.3306496,
-    "sourceUrl": "https://www.facebook.com/KuyaMaxRestaurant/"
-  },
-  {
-    "id": 7,
-    "slug": "city-de-luxe",
-    "name": "City De Luxe Restaurant and Bakeshop",
-    "neighborhood": "Tapuac, Dagupan City",
-    "address": "Tapuac District, Dagupan City",
-    "description": "A Tapuac restaurant and bakeshop serving meals and baked treats.",
-    "imageUrl": "images/representative/city-de-luxe.jpg",
-    "venueImageUrl": "images/representative/city-de-luxe.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "dessert",
-      "drinks"
-    ],
-    "highlights": [
-      "Restaurant",
-      "Bakeshop"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.031514,
-    "longitude": 120.330035,
-    "sourceUrl": "https://www.facebook.com/citydeluxerestaurant/"
-  },
-  {
-    "id": 8,
-    "slug": "caffe-angelito",
-    "name": "Caffé Angelito Coffee & Juice Bar",
-    "neighborhood": "Tapuac, Dagupan City",
-    "address": "Mother Goose Commercial Building, Dagupan-Lingayen Road, Tapuac, Dagupan City",
-    "description": "A Tapuac coffee and juice bar that also serves wood-fired pizza.",
-    "imageUrl": "images/representative/caffe-angelito.jpg",
-    "venueImageUrl": "images/representative/caffe-angelito.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "drinks",
-      "dessert",
-      "meat"
-    ],
-    "highlights": [
-      "Coffee",
-      "Juice",
-      "Wood-fired pizza"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": null,
-    "longitude": null,
-    "sourceUrl": "https://www.yelp.com/biz/caffe-angelito-dagupan"
-  },
-  {
-    "id": 9,
-    "slug": "gt-dolce-cafe-patisserie",
-    "name": "GT Dolcé Café Pâtisserie",
-    "neighborhood": "Dagupan City",
-    "address": "A.B. Fernandez Avenue, Dagupan City",
-    "description": "A Dagupan café and patisserie featuring cakes and desserts.",
-    "imageUrl": "images/representative/gt-dolce-cafe-patisserie.jpg",
-    "venueImageUrl": "images/representative/gt-dolce-cafe-patisserie.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "dessert",
-      "drinks"
-    ],
-    "highlights": [
-      "Café",
-      "Cakes",
-      "Desserts"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0461521,
-    "longitude": 120.3492737,
-    "sourceUrl": "https://www.facebook.com/GTDolceCafePatisserieDaupanCity/"
-  },
-  {
-    "id": 10,
-    "slug": "black-scoop-cafe-dagupan",
-    "name": "Black Scoop Café - Dagupan City",
-    "neighborhood": "Lucao, Dagupan City",
-    "address": "Lucao Road, Dagupan City",
-    "description": "A Dagupan branch of the café and dessert shop.",
-    "imageUrl": "images/representative/black-scoop-cafe-dagupan.jpg",
-    "venueImageUrl": "images/representative/black-scoop-cafe-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "dessert",
-      "drinks"
-    ],
-    "highlights": [
-      "Café",
-      "Desserts"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0255085,
-    "longitude": 120.3270414,
-    "sourceUrl": "https://restaurantguru.com/Black-Scoop-Cafe-Dagupan-Dagupan"
-  },
-  {
-    "id": 11,
-    "slug": "jeprox-dagupan",
-    "name": "Jeprox Dagupan Restaurant",
-    "neighborhood": "Dagupan City",
-    "address": "Old Judge Jose de Venecia Avenue, Dagupan City",
-    "description": "A local restaurant serving Filipino seafood and grilled dishes.",
-    "imageUrl": "images/representative/jeprox-dagupan.jpg",
-    "venueImageUrl": "images/representative/jeprox-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat"
-    ],
-    "highlights": [
-      "Seafood",
-      "Grilled dishes"
-    ],
-    "hours": "Confirm current hours with the restaurant.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0228299,
-    "longitude": 120.3216537,
-    "sourceUrl": "https://www.angsarap.net/2025/10/07/jeprox-dagupan-restaurant-dagupan-city-pangasinan-philippines/"
-  },
-  {
-    "id": 12,
-    "slug": "uson-pigar-pigar",
-    "name": "Uson Pigar-Pigar",
-    "neighborhood": "Dagupan City",
-    "address": "Binmaley Road, Dagupan City",
-    "description": "A local guide lists this eatery for pigar-pigar, a Pangasinan beef dish. Current operation is unconfirmed.",
-    "imageUrl": "images/representative/uson-pigar-pigar.jpg",
-    "venueImageUrl": "images/representative/uson-pigar-pigar.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Pigar-pigar",
-      "Current operation unconfirmed"
-    ],
-    "hours": "Current hours and operation are unconfirmed; check the source before visiting.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0197897,
-    "longitude": 120.3215716,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 13,
-    "slug": "kahluts-restaurant",
-    "name": "Kahluts Restaurant",
-    "neighborhood": "Pantal, Dagupan City",
-    "address": "135 Arellano Street, Barangay Pantal, Dagupan City",
-    "description": "A local guide lists this Pantal restaurant for barbecue, grilled dishes, and soups. Current operation is unconfirmed.",
-    "imageUrl": "images/representative/kahluts-restaurant.jpg",
-    "venueImageUrl": "images/representative/kahluts-restaurant.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Barbecue",
-      "Current operation unconfirmed"
-    ],
-    "hours": "Current hours and operation are unconfirmed; check the source before visiting.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": null,
-    "longitude": null,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 14,
-    "slug": "los-pedritos-tapuac",
-    "name": "Los Pedritos - Tapuac",
-    "neighborhood": "Tapuac, Dagupan City",
-    "address": "Tapuac, Dagupan City",
-    "description": "A Tapuac Filipino restaurant listed for meals and desserts such as halo-halo.",
-    "imageUrl": "images/representative/los-pedritos-tapuac.jpg",
-    "venueImageUrl": "images/representative/los-pedritos-tapuac.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "dessert"
-    ],
-    "highlights": [
-      "Filipino meals",
-      "Halo-halo"
-    ],
-    "hours": "Check the source for current hours.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0293418,
-    "longitude": 120.3284283,
-    "sourceUrl": "https://restaurantguru.com/Pedritos-Dagupan"
-  },
-  {
-    "id": 15,
-    "slug": "siblings-home-of-comfort-food",
-    "name": "Siblings Home of Comfort Food",
-    "neighborhood": "Mayombo, Dagupan City",
-    "address": "Mayombo, Dagupan City",
-    "description": "A local guide lists this Mayombo restaurant for comfort food, including pizza, salads, and meat dishes. Current dine-in status is unclear.",
-    "imageUrl": "images/representative/siblings-home-of-comfort-food.jpg",
-    "venueImageUrl": "images/representative/siblings-home-of-comfort-food.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "dessert"
-    ],
-    "highlights": [
-      "Comfort food",
-      "Dine-in status unclear"
-    ],
-    "hours": "Current hours and dine-in service are unconfirmed; check the source.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": null,
-    "longitude": null,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 16,
-    "slug": "kainan-ni-mang-peping",
-    "name": "Kainan ni Mang Peping",
-    "neighborhood": "Dagupan City",
-    "address": "De Venecia Highway Extension, Dagupan City",
-    "description": "A local guide lists this Dagupan eatery for Filipino grill-style meals. Current operation is unconfirmed.",
-    "imageUrl": "images/representative/kainan-ni-mang-peping.jpg",
-    "venueImageUrl": "images/representative/kainan-ni-mang-peping.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Grilled dishes",
-      "Current operation unconfirmed"
-    ],
-    "hours": "Current hours and operation are unconfirmed; check the source before visiting.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0317205,
-    "longitude": 120.3256552,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 17,
-    "slug": "silantro-fil-mex-cantina",
-    "name": "Silantro Fil-Mex Cantina",
-    "neighborhood": "Downtown Dagupan",
-    "address": "229 Perez Boulevard, Dagupan City",
-    "description": "A Filipino-Mexican restaurant listed on Perez Boulevard. Current operation is unconfirmed.",
-    "imageUrl": "images/representative/silantro-fil-mex-cantina.jpg",
-    "venueImageUrl": "images/representative/silantro-fil-mex-cantina.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Filipino-Mexican",
-      "Current operation unconfirmed"
-    ],
-    "hours": "Current hours and operation are unconfirmed; check the source before visiting.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.040227,
-    "longitude": 120.3381576,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 18,
-    "slug": "olivias-pizzeria",
-    "name": "Olivia's Pizzeria",
-    "neighborhood": "Dagupan City",
-    "address": "A.B. Fernandez East Avenue, Dagupan City",
-    "description": "A pizzeria listed on A.B. Fernandez East Avenue. Current operation is unconfirmed.",
-    "imageUrl": "images/representative/olivias-pizzeria.jpg",
-    "venueImageUrl": "images/representative/olivias-pizzeria.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "dessert"
-    ],
-    "highlights": [
-      "Pizza",
-      "Current operation unconfirmed"
-    ],
-    "hours": "Current hours and operation are unconfirmed; check the source before visiting.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0466333,
-    "longitude": 120.3516454,
-    "sourceUrl": "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
-  },
-  {
-    "id": 19,
-    "slug": "sangkalan-restaurant-dagupan",
-    "name": "Sangkalan Restaurant - Dagupan",
-    "neighborhood": "Pantal, Dagupan City",
-    "address": "Royal Rays Foodhall, De Venecia Extension, Barangay Pantal, Dagupan City",
-    "description": "A Dagupan listing for Filipino and Asian dishes, including seafood and local meals.",
-    "imageUrl": "images/representative/sangkalan-restaurant-dagupan.jpg",
-    "venueImageUrl": "images/representative/sangkalan-restaurant-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood",
-      "meat"
-    ],
-    "highlights": [
-      "Filipino food",
-      "Seafood"
-    ],
-    "hours": "Check the source for current hours.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.05295,
-    "longitude": 120.3361273,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/i1lv/sangkalan-restaurant-dagupan"
-  },
-  {
-    "id": 20,
-    "slug": "bedbox-flavor-box-dagupan",
-    "name": "Bedbox Hotel - Flavor Box (Dagupan)",
-    "neighborhood": "Dagupan City",
-    "address": "Rizal Street, Barangay 2, Dagupan City",
-    "description": "A food listing at Bedbox Hotel for Filipino and Asian meals.",
-    "imageUrl": "images/representative/bedbox-flavor-box-dagupan.jpg",
-    "venueImageUrl": "images/representative/bedbox-flavor-box-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "drinks"
-    ],
-    "highlights": [
-      "Filipino meals",
-      "Asian dishes"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0436375,
-    "longitude": 120.3391719,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/fi1y/bedbox-hotel-flavor-box-dagupan"
-  },
-  {
-    "id": 21,
-    "slug": "sajj-shawarma-dagupan",
-    "name": "Sajj Shawarma - Dagupan",
-    "neighborhood": "Dagupan City",
-    "address": "270 Amado Street, Dagupan City",
-    "description": "A Dagupan food listing for shawarma and South Asian dishes such as biryani.",
-    "imageUrl": "images/representative/sajj-shawarma-dagupan.jpg",
-    "venueImageUrl": "images/representative/sajj-shawarma-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Shawarma",
-      "Biryani"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.033959,
-    "longitude": 120.3302203,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/ts6h/sajj-shawarma-dagupan"
-  },
-  {
-    "id": 22,
-    "slug": "abozayn-dagupan",
-    "name": "Abozayn - Dagupan",
-    "neighborhood": "Tapuac, Dagupan City",
-    "address": "Amado Street, Tapuac, Dagupan City (Jumong Store)",
-    "description": "A Tapuac food listing for Middle Eastern wraps and shawarma.",
-    "imageUrl": "images/representative/abozayn-dagupan.jpg",
-    "venueImageUrl": "images/representative/abozayn-dagupan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Shawarma",
-      "Wraps"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0348226,
-    "longitude": 120.3297963,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/nv92/abozayn-dagupan-nv92"
-  },
-  {
-    "id": 23,
-    "slug": "stay-awhile-cafe-bakery",
-    "name": "Stay Awhile Café & Bakery",
-    "neighborhood": "Dagupan City",
-    "address": "Coastway Complex, Arellano Street, Dagupan City",
-    "description": "A café and bakery listed at the Coastway Complex, with beverages and light fare.",
-    "imageUrl": "images/representative/stay-awhile-cafe-bakery.jpg",
-    "venueImageUrl": "images/representative/stay-awhile-cafe-bakery.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "drinks",
-      "dessert"
-    ],
-    "highlights": [
-      "Café",
-      "Bakery"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0567626,
-    "longitude": 120.3405079,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/lpee/stay-awhile-cafe-and-bakery"
-  },
-  {
-    "id": 24,
-    "slug": "cafe-lilom",
-    "name": "Café Lilom",
-    "neighborhood": "Tapuac, Dagupan City",
-    "address": "Amado Street, Hollywood Dormitory, Tapuac, Dagupan City",
-    "description": "A Tapuac café listing coffee, drinks, sandwiches, and meals.",
-    "imageUrl": "images/representative/cafe-lilom.jpg",
-    "venueImageUrl": "images/representative/cafe-lilom.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "drinks",
-      "meat"
-    ],
-    "highlights": [
-      "Coffee",
-      "Sandwiches"
-    ],
-    "hours": "Check the source for current hours.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0358086,
-    "longitude": 120.3294061,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/hnik/cafe-lilom"
-  },
-  {
-    "id": 25,
-    "slug": "dagupan-pansiteria-4rs-herrero",
-    "name": "Dagupan Pansiteria by 4Rs - Herrero Road",
-    "neighborhood": "Herrero-Perez, Dagupan City",
-    "address": "Behind SM Center Dagupan, Herrero Road, Barangay Herrero-Perez, Dagupan City",
-    "description": "A local noodle restaurant listed on Herrero Road.",
-    "imageUrl": "images/representative/dagupan-pansiteria-4rs-herrero.jpg",
-    "venueImageUrl": "images/representative/dagupan-pansiteria-4rs-herrero.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Noodle dishes"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.04382539,
-    "longitude": 120.34305085,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/yicf/dagupan-pansiteria-by-4rs-herrero-road"
-  },
-  {
-    "id": 26,
-    "slug": "mpc-pigar-pigar-galvan",
-    "name": "MPC Pigar-Pigar - Galvan Street",
-    "neighborhood": "Galvan Street, Dagupan City",
-    "address": "Galvan Street, Barangay II, Dagupan City",
-    "description": "A Galvan Street listing for Filipino meals centered on pigar-pigar.",
-    "imageUrl": "images/representative/mpc-pigar-pigar-galvan.jpg",
-    "venueImageUrl": "images/representative/mpc-pigar-pigar-galvan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Pigar-pigar",
-      "Rice meals"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0414198,
-    "longitude": 120.3367648,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/aegg/mpc-pigar-pigar-galvan-street"
-  },
-  {
-    "id": 27,
-    "slug": "ty-ans-pigar-pigar-galvan",
-    "name": "Ty-An's Pigar Pigar - Galvan Street",
-    "neighborhood": "Galvan Street, Dagupan City",
-    "address": "Galvan Street, beside the Philippine Independent Church, Dagupan City",
-    "description": "A Galvan Street food listing for Filipino rice meals and pigar-pigar.",
-    "imageUrl": "images/representative/ty-ans-pigar-pigar-galvan.jpg",
-    "venueImageUrl": "images/representative/ty-ans-pigar-pigar-galvan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Pigar-pigar",
-      "Rice meals"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0423625,
-    "longitude": 120.3363304,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/h1mq/ty-ans-pigar-pigar-galvan-street"
-  },
-  {
-    "id": 28,
-    "slug": "simeonas-seafood-bonuan",
-    "name": "Simeona's Seafood Restaurant - Bonuan Gueset",
-    "neighborhood": "Bonuan Gueset, Dagupan City",
-    "address": "Bonuan Gueset, Dagupan City",
-    "description": "A seafood restaurant listed in the Bonuan Gueset area.",
-    "imageUrl": "images/representative/simeonas-seafood-bonuan.jpg",
-    "venueImageUrl": "images/representative/simeonas-seafood-bonuan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "seafood"
-    ],
-    "highlights": [
-      "Seafood"
-    ],
-    "hours": "Check the source for current hours.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0672997,
-    "longitude": 120.3351498,
-    "sourceUrl": "https://www.foodpanda.ph/city/dagupan-pangasinan"
-  },
-  {
-    "id": 29,
-    "slug": "jcv-pigar-pigar-galvan",
-    "name": "JCV Pigar Pigar - Galvan Street",
-    "neighborhood": "Galvan Street, Dagupan City",
-    "address": "50 Galvan Street, Dagupan City",
-    "description": "A Galvan Street food listing for rice dishes, including pigar-pigar.",
-    "imageUrl": "images/representative/jcv-pigar-pigar-galvan.jpg",
-    "venueImageUrl": "images/representative/jcv-pigar-pigar-galvan.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Pigar-pigar",
-      "Rice dishes"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0413397,
-    "longitude": 120.3366291,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/w9en/jcv-pigar-pigar-galvan-street"
-  },
-  {
-    "id": 30,
-    "slug": "lots-foodhouse-shawarma-burgos",
-    "name": "Lot's Foodhouse and Shawarma - Burgos Street",
-    "neighborhood": "Dagupan City",
-    "address": "Burgos Street, Dagupan City",
-    "description": "A Burgos Street food listing for shawarma and foodhouse meals.",
-    "imageUrl": "images/representative/lots-foodhouse-shawarma-burgos.jpg",
-    "venueImageUrl": "images/representative/lots-foodhouse-shawarma-burgos.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat"
-    ],
-    "highlights": [
-      "Shawarma",
-      "Filipino meals"
-    ],
-    "hours": "Check the source for current hours and dine-in service.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0342266,
-    "longitude": 120.3379087,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/y0oh/lots-foodhouse-and-shawarma-burgos-street"
-  },
-  {
-    "id": 31,
-    "slug": "rubis-restaurant-arellano",
-    "name": "Rubis Restaurant - Arellano Street",
-    "neighborhood": "Dagupan City",
-    "address": "Arellano Street, Dagupan City",
-    "description": "A Dagupan restaurant and bakeshop listed on Arellano Street.",
-    "imageUrl": "images/representative/rubis-restaurant-arellano.jpg",
-    "venueImageUrl": "images/representative/rubis-restaurant-arellano.jpg",
-    "rating": 0,
-    "reviewCount": 0,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceLevel": "Contact venue",
-    "categories": [
-      "meat",
-      "dessert"
-    ],
-    "highlights": [
-      "Restaurant",
-      "Bakeshop"
-    ],
-    "hours": "Check the source for current hours.",
-    "isOpen": true,
-    "featured": false,
-    "status": "approved",
-    "latitude": 16.0495707,
-    "longitude": 120.3417039,
-    "sourceUrl": "https://www.foodpanda.ph/restaurant/pyo3/rubis-restaurant-arellano-street"
-  }
+    {
+        "id":  1,
+        "slug":  "house-of-bangus",
+        "name":  "House of Bangus",
+        "neighborhood":  "Calasiao (near Dagupan)",
+        "address":  "RBA Paramount Building, Old De Venecia Highway, Calasiao",
+        "description":  "A nearby Calasiao restaurant known for Pangasinan bangus dishes.",
+        "imageUrl":  "images/bangus-relleno-all-natural-food.jpg",
+        "venueImageUrl":  "images/bangus-relleno-all-natural-restaurant.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Bangus dishes",
+                           "Neighboring Calasiao"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  true,
+        "status":  "approved",
+        "latitude":  16.0180041,
+        "longitude":  120.3382513
+    },
+    {
+        "id":  2,
+        "slug":  "ciudad-elmina",
+        "name":  "Ciudad Elmina Restaurant",
+        "neighborhood":  "Bacayao Norte, Dagupan City",
+        "address":  "Bacayao Norte Road, Bacayao Norte, Dagupan City",
+        "description":  "A Filipino and seafood restaurant with floating-village-style dining.",
+        "imageUrl":  "images/ciudad-elmina-food.jpg",
+        "venueImageUrl":  "images/ciudad-elmina-restaurant.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "drinks",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "Filipino dishes",
+                           "Seafood"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  true,
+        "status":  "approved",
+        "latitude":  16.0345605,
+        "longitude":  120.3441752,
+        "sourceUrl":  "https://www.facebook.com/CiudadElminaFishingVillage/"
+    },
+    {
+        "id":  3,
+        "slug":  "matutina-gerrys",
+        "name":  "Matutina\u0027s and Gerry\u0027s Seafood House",
+        "neighborhood":  "Pantal, Dagupan City",
+        "address":  "De Venecia Road Extension, Barangay Pantal, Dagupan City",
+        "description":  "A seafood restaurant serving Filipino dishes and bangus specialties.",
+        "imageUrl":  "images/matutina-s-and-gerry-food.jpg",
+        "venueImageUrl":  "images/matutina-s-and-gerry-restaurant.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat",
+                           "drinks"
+                       ],
+        "highlights":  [
+                           "Seafood",
+                           "Bangus specialties"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0552954,
+        "longitude":  120.3374765,
+        "sourceUrl":  "https://matutinagerryseafood.com/"
+    },
+    {
+        "id":  4,
+        "slug":  "silverios-seafoods",
+        "name":  "Silverio\u0027s Seafoods Restaurant",
+        "neighborhood":  "Dagupan City",
+        "address":  "56 Arellano Street, Dagupan City",
+        "description":  "A Dagupan seafood restaurant whose public listing notes it was established in 1996.",
+        "imageUrl":  "images/representative/silverios-seafoods.jpg",
+        "venueImageUrl":  "images/representative/silverios-seafoods.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  300,
+        "priceMax":  600,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood"
+                       ],
+        "highlights":  [
+                           "Seafood"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.058418,
+        "longitude":  120.3400588,
+        "sourceUrl":  "https://www.facebook.com/silveriosseafoodsrestaurantinc/"
+    },
+    {
+        "id":  5,
+        "slug":  "jacobos-seafood-grill",
+        "name":  "Jacobo\u0027s Seafood Grill",
+        "neighborhood":  "Pantal, Dagupan City",
+        "address":  "Judge Jose de Venecia Boulevard Extension, Barangay Pantal, Dagupan City",
+        "description":  "A Filipino restaurant serving seafood and grilled dishes.",
+        "imageUrl":  "images/representative/jacobos-seafood-grill.jpg",
+        "venueImageUrl":  "images/representative/jacobos-seafood-grill.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Seafood",
+                           "Grilled dishes"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  null,
+        "longitude":  null,
+        "sourceUrl":  "https://www.yelp.com/biz/jacobos-seafood-grill-dagupan-city"
+    },
+    {
+        "id":  6,
+        "slug":  "kuya-max-grill",
+        "name":  "Kuya Max Grill and Restaurant",
+        "neighborhood":  "Dagupan City",
+        "address":  "Judge Jose de Venecia Avenue, Dagupan City",
+        "description":  "A Dagupan grill serving Filipino favorites and seafood.",
+        "imageUrl":  "images/representative/kuya-max-grill.jpg",
+        "venueImageUrl":  "images/representative/kuya-max-grill.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  400,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Grilled dishes",
+                           "Filipino food"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.019274,
+        "longitude":  120.3306496,
+        "sourceUrl":  "https://www.facebook.com/KuyaMaxRestaurant/"
+    },
+    {
+        "id":  7,
+        "slug":  "city-de-luxe",
+        "name":  "City De Luxe Restaurant and Bakeshop",
+        "neighborhood":  "Tapuac, Dagupan City",
+        "address":  "Tapuac District, Dagupan City",
+        "description":  "A Tapuac restaurant and bakeshop serving meals and baked treats.",
+        "imageUrl":  "images/representative/city-de-luxe.jpg",
+        "venueImageUrl":  "images/representative/city-de-luxe.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  100,
+        "priceMax":  300,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "dessert",
+                           "drinks"
+                       ],
+        "highlights":  [
+                           "Restaurant",
+                           "Bakeshop"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.031514,
+        "longitude":  120.330035,
+        "sourceUrl":  "https://www.facebook.com/citydeluxerestaurant/"
+    },
+    {
+        "id":  8,
+        "slug":  "caffe-angelito",
+        "name":  "CaffÃƒÂ© Angelito Coffee \u0026 Juice Bar",
+        "neighborhood":  "Tapuac, Dagupan City",
+        "address":  "Mother Goose Commercial Building, Dagupan-Lingayen Road, Tapuac, Dagupan City",
+        "description":  "A Tapuac coffee and juice bar that also serves wood-fired pizza.",
+        "imageUrl":  "images/representative/caffe-angelito.jpg",
+        "venueImageUrl":  "images/representative/caffe-angelito.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "drinks",
+                           "dessert",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Coffee",
+                           "Juice",
+                           "Wood-fired pizza"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  null,
+        "longitude":  null,
+        "sourceUrl":  "https://www.yelp.com/biz/caffe-angelito-dagupan"
+    },
+    {
+        "id":  9,
+        "slug":  "gt-dolce-cafe-patisserie",
+        "name":  "GT DolcÃƒÂ© CafÃƒÂ© PÃƒÂ¢tisserie",
+        "neighborhood":  "Dagupan City",
+        "address":  "A.B. Fernandez Avenue, Dagupan City",
+        "description":  "A Dagupan cafÃƒÂ© and patisserie featuring cakes and desserts.",
+        "imageUrl":  "images/representative/gt-dolce-cafe-patisserie.jpg",
+        "venueImageUrl":  "images/representative/gt-dolce-cafe-patisserie.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  400,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "dessert",
+                           "drinks"
+                       ],
+        "highlights":  [
+                           "CafÃƒÂ©",
+                           "Cakes",
+                           "Desserts"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0461521,
+        "longitude":  120.3492737,
+        "sourceUrl":  "https://www.facebook.com/GTDolceCafePatisserieDaupanCity/"
+    },
+    {
+        "id":  10,
+        "slug":  "black-scoop-cafe-dagupan",
+        "name":  "Black Scoop CafÃƒÂ© - Dagupan City",
+        "neighborhood":  "Lucao, Dagupan City",
+        "address":  "Lucao Road, Dagupan City",
+        "description":  "A Dagupan branch of the cafÃƒÂ© and dessert shop.",
+        "imageUrl":  "images/representative/black-scoop-cafe-dagupan.jpg",
+        "venueImageUrl":  "images/representative/black-scoop-cafe-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  80,
+        "priceMax":  500,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "dessert",
+                           "drinks"
+                       ],
+        "highlights":  [
+                           "CafÃƒÂ©",
+                           "Desserts"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0255085,
+        "longitude":  120.3270414,
+        "sourceUrl":  "https://restaurantguru.com/Black-Scoop-Cafe-Dagupan-Dagupan"
+    },
+    {
+        "id":  11,
+        "slug":  "jeprox-dagupan",
+        "name":  "Jeprox Dagupan Restaurant",
+        "neighborhood":  "Dagupan City",
+        "address":  "Old Judge Jose de Venecia Avenue, Dagupan City",
+        "description":  "A local restaurant serving Filipino seafood and grilled dishes.",
+        "imageUrl":  "images/representative/jeprox-dagupan.jpg",
+        "venueImageUrl":  "images/representative/jeprox-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  2000,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Seafood",
+                           "Grilled dishes"
+                       ],
+        "hours":  "Confirm current hours with the restaurant.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0228299,
+        "longitude":  120.3216537,
+        "sourceUrl":  "https://www.angsarap.net/2025/10/07/jeprox-dagupan-restaurant-dagupan-city-pangasinan-philippines/"
+    },
+    {
+        "id":  12,
+        "slug":  "uson-pigar-pigar",
+        "name":  "Uson Pigar-Pigar",
+        "neighborhood":  "Dagupan City",
+        "address":  "Binmaley Road, Dagupan City",
+        "description":  "A local guide lists this eatery for pigar-pigar, a Pangasinan beef dish. Current operation is unconfirmed.",
+        "imageUrl":  "images/representative/uson-pigar-pigar.jpg",
+        "venueImageUrl":  "images/representative/uson-pigar-pigar.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  110,
+        "priceMax":  860,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Pigar-pigar",
+                           "Current operation unconfirmed"
+                       ],
+        "hours":  "Current hours and operation are unconfirmed; check the source before visiting.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0197897,
+        "longitude":  120.3215716,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  13,
+        "slug":  "kahluts-restaurant",
+        "name":  "Kahluts Restaurant",
+        "neighborhood":  "Pantal, Dagupan City",
+        "address":  "135 Arellano Street, Barangay Pantal, Dagupan City",
+        "description":  "A local guide lists this Pantal restaurant for barbecue, grilled dishes, and soups. Current operation is unconfirmed.",
+        "imageUrl":  "images/representative/kahluts-restaurant.jpg",
+        "venueImageUrl":  "images/representative/kahluts-restaurant.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  500,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Barbecue",
+                           "Current operation unconfirmed"
+                       ],
+        "hours":  "Current hours and operation are unconfirmed; check the source before visiting.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  null,
+        "longitude":  null,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  14,
+        "slug":  "los-pedritos-tapuac",
+        "name":  "Los Pedritos - Tapuac",
+        "neighborhood":  "Tapuac, Dagupan City",
+        "address":  "Tapuac, Dagupan City",
+        "description":  "A Tapuac Filipino restaurant listed for meals and desserts such as halo-halo.",
+        "imageUrl":  "images/representative/los-pedritos-tapuac.jpg",
+        "venueImageUrl":  "images/representative/los-pedritos-tapuac.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  260,
+        "priceMax":  550,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "Filipino meals",
+                           "Halo-halo"
+                       ],
+        "hours":  "Check the source for current hours.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0293418,
+        "longitude":  120.3284283,
+        "sourceUrl":  "https://restaurantguru.com/Pedritos-Dagupan"
+    },
+    {
+        "id":  15,
+        "slug":  "siblings-home-of-comfort-food",
+        "name":  "Siblings Home of Comfort Food",
+        "neighborhood":  "Mayombo, Dagupan City",
+        "address":  "Mayombo, Dagupan City",
+        "description":  "A local guide lists this Mayombo restaurant for comfort food, including pizza, salads, and meat dishes. Current dine-in status is unclear.",
+        "imageUrl":  "images/representative/siblings-home-of-comfort-food.jpg",
+        "venueImageUrl":  "images/representative/siblings-home-of-comfort-food.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  0,
+        "priceMax":  0,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "Comfort food",
+                           "Dine-in status unclear"
+                       ],
+        "hours":  "Current hours and dine-in service are unconfirmed; check the source.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  null,
+        "longitude":  null,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  16,
+        "slug":  "kainan-ni-mang-peping",
+        "name":  "Kainan ni Mang Peping",
+        "neighborhood":  "Dagupan City",
+        "address":  "De Venecia Highway Extension, Dagupan City",
+        "description":  "A local guide lists this Dagupan eatery for Filipino grill-style meals. Current operation is unconfirmed.",
+        "imageUrl":  "images/representative/kainan-ni-mang-peping.jpg",
+        "venueImageUrl":  "images/representative/kainan-ni-mang-peping.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  2000,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Grilled dishes",
+                           "Current operation unconfirmed"
+                       ],
+        "hours":  "Current hours and operation are unconfirmed; check the source before visiting.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0317205,
+        "longitude":  120.3256552,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  17,
+        "slug":  "silantro-fil-mex-cantina",
+        "name":  "Silantro Fil-Mex Cantina",
+        "neighborhood":  "Downtown Dagupan",
+        "address":  "229 Perez Boulevard, Dagupan City",
+        "description":  "A Filipino-Mexican restaurant listed on Perez Boulevard. Current operation is unconfirmed.",
+        "imageUrl":  "images/representative/silantro-fil-mex-cantina.jpg",
+        "venueImageUrl":  "images/representative/silantro-fil-mex-cantina.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  120,
+        "priceMax":  1800,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Filipino-Mexican",
+                           "Current operation unconfirmed"
+                       ],
+        "hours":  "Current hours and operation are unconfirmed; check the source before visiting.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.040227,
+        "longitude":  120.3381576,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  18,
+        "slug":  "olivias-pizzeria",
+        "name":  "Olivia\u0027s Pizzeria",
+        "neighborhood":  "Dagupan City",
+        "address":  "A.B. Fernandez East Avenue, Dagupan City",
+        "description":  "A pizzeria listed on A.B. Fernandez East Avenue. Current operation is unconfirmed.",
+        "imageUrl":  "images/representative/olivias-pizzeria.jpg",
+        "venueImageUrl":  "images/representative/olivias-pizzeria.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  350,
+        "priceMax":  2000,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "Pizza",
+                           "Current operation unconfirmed"
+                       ],
+        "hours":  "Current hours and operation are unconfirmed; check the source before visiting.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0466333,
+        "longitude":  120.3516454,
+        "sourceUrl":  "https://joansfootprints.com/2020/09/15/best-restaurants-in-dagupan-city-pangasinan-a-food-bloggers-choice/"
+    },
+    {
+        "id":  19,
+        "slug":  "sangkalan-restaurant-dagupan",
+        "name":  "Sangkalan Restaurant - Dagupan",
+        "neighborhood":  "Pantal, Dagupan City",
+        "address":  "Royal Rays Foodhall, De Venecia Extension, Barangay Pantal, Dagupan City",
+        "description":  "A Dagupan listing for Filipino and Asian dishes, including seafood and local meals.",
+        "imageUrl":  "images/representative/sangkalan-restaurant-dagupan.jpg",
+        "venueImageUrl":  "images/representative/sangkalan-restaurant-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  400,
+        "priceMax":  600,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Filipino food",
+                           "Seafood"
+                       ],
+        "hours":  "Check the source for current hours.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.05295,
+        "longitude":  120.3361273,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/i1lv/sangkalan-restaurant-dagupan"
+    },
+    {
+        "id":  20,
+        "slug":  "bedbox-flavor-box-dagupan",
+        "name":  "Bedbox Hotel - Flavor Box (Dagupan)",
+        "neighborhood":  "Dagupan City",
+        "address":  "Rizal Street, Barangay 2, Dagupan City",
+        "description":  "A food listing at Bedbox Hotel for Filipino and Asian meals.",
+        "imageUrl":  "images/representative/bedbox-flavor-box-dagupan.jpg",
+        "venueImageUrl":  "images/representative/bedbox-flavor-box-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  120,
+        "priceMax":  750,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "drinks"
+                       ],
+        "highlights":  [
+                           "Filipino meals",
+                           "Asian dishes"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0436375,
+        "longitude":  120.3391719,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/fi1y/bedbox-hotel-flavor-box-dagupan"
+    },
+    {
+        "id":  21,
+        "slug":  "sajj-shawarma-dagupan",
+        "name":  "Sajj Shawarma - Dagupan",
+        "neighborhood":  "Dagupan City",
+        "address":  "270 Amado Street, Dagupan City",
+        "description":  "A Dagupan food listing for shawarma and South Asian dishes such as biryani.",
+        "imageUrl":  "images/representative/sajj-shawarma-dagupan.jpg",
+        "venueImageUrl":  "images/representative/sajj-shawarma-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  125,
+        "priceMax":  850,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Shawarma",
+                           "Biryani"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.033959,
+        "longitude":  120.3302203,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/ts6h/sajj-shawarma-dagupan"
+    },
+    {
+        "id":  22,
+        "slug":  "abozayn-dagupan",
+        "name":  "Abozayn - Dagupan",
+        "neighborhood":  "Tapuac, Dagupan City",
+        "address":  "Amado Street, Tapuac, Dagupan City (Jumong Store)",
+        "description":  "A Tapuac food listing for Middle Eastern wraps and shawarma.",
+        "imageUrl":  "images/representative/abozayn-dagupan.jpg",
+        "venueImageUrl":  "images/representative/abozayn-dagupan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  140,
+        "priceMax":  550,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Shawarma",
+                           "Wraps"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0348226,
+        "longitude":  120.3297963,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/nv92/abozayn-dagupan-nv92"
+    },
+    {
+        "id":  23,
+        "slug":  "stay-awhile-cafe-bakery",
+        "name":  "Stay Awhile CafÃƒÂ© \u0026 Bakery",
+        "neighborhood":  "Dagupan City",
+        "address":  "Coastway Complex, Arellano Street, Dagupan City",
+        "description":  "A cafÃƒÂ© and bakery listed at the Coastway Complex, with beverages and light fare.",
+        "imageUrl":  "images/representative/stay-awhile-cafe-bakery.jpg",
+        "venueImageUrl":  "images/representative/stay-awhile-cafe-bakery.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  150,
+        "priceMax":  600,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "drinks",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "CafÃƒÂ©",
+                           "Bakery"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0567626,
+        "longitude":  120.3405079,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/lpee/stay-awhile-cafe-and-bakery"
+    },
+    {
+        "id":  24,
+        "slug":  "cafe-lilom",
+        "name":  "CafÃƒÂ© Lilom",
+        "neighborhood":  "Tapuac, Dagupan City",
+        "address":  "Amado Street, Hollywood Dormitory, Tapuac, Dagupan City",
+        "description":  "A Tapuac cafÃƒÂ© listing coffee, drinks, sandwiches, and meals.",
+        "imageUrl":  "images/representative/cafe-lilom.jpg",
+        "venueImageUrl":  "images/representative/cafe-lilom.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  110,
+        "priceMax":  400,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "drinks",
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Coffee",
+                           "Sandwiches"
+                       ],
+        "hours":  "Check the source for current hours.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0358086,
+        "longitude":  120.3294061,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/hnik/cafe-lilom"
+    },
+    {
+        "id":  25,
+        "slug":  "dagupan-pansiteria-4rs-herrero",
+        "name":  "Dagupan Pansiteria by 4Rs - Herrero Road",
+        "neighborhood":  "Herrero-Perez, Dagupan City",
+        "address":  "Behind SM Center Dagupan, Herrero Road, Barangay Herrero-Perez, Dagupan City",
+        "description":  "A local noodle restaurant listed on Herrero Road.",
+        "imageUrl":  "images/representative/dagupan-pansiteria-4rs-herrero.jpg",
+        "venueImageUrl":  "images/representative/dagupan-pansiteria-4rs-herrero.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  150,
+        "priceMax":  300,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Noodle dishes"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.04382539,
+        "longitude":  120.34305085,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/yicf/dagupan-pansiteria-by-4rs-herrero-road"
+    },
+    {
+        "id":  26,
+        "slug":  "mpc-pigar-pigar-galvan",
+        "name":  "MPC Pigar-Pigar - Galvan Street",
+        "neighborhood":  "Galvan Street, Dagupan City",
+        "address":  "Galvan Street, Barangay II, Dagupan City",
+        "description":  "A Galvan Street listing for Filipino meals centered on pigar-pigar.",
+        "imageUrl":  "images/representative/mpc-pigar-pigar-galvan.jpg",
+        "venueImageUrl":  "images/representative/mpc-pigar-pigar-galvan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  200,
+        "priceMax":  450,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Pigar-pigar",
+                           "Rice meals"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0414198,
+        "longitude":  120.3367648,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/aegg/mpc-pigar-pigar-galvan-street"
+    },
+    {
+        "id":  27,
+        "slug":  "ty-ans-pigar-pigar-galvan",
+        "name":  "Ty-An\u0027s Pigar Pigar - Galvan Street",
+        "neighborhood":  "Galvan Street, Dagupan City",
+        "address":  "Galvan Street, beside the Philippine Independent Church, Dagupan City",
+        "description":  "A Galvan Street food listing for Filipino rice meals and pigar-pigar.",
+        "imageUrl":  "images/representative/ty-ans-pigar-pigar-galvan.jpg",
+        "venueImageUrl":  "images/representative/ty-ans-pigar-pigar-galvan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  230,
+        "priceMax":  400,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Pigar-pigar",
+                           "Rice meals"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0423625,
+        "longitude":  120.3363304,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/h1mq/ty-ans-pigar-pigar-galvan-street"
+    },
+    {
+        "id":  28,
+        "slug":  "simeonas-seafood-bonuan",
+        "name":  "Simeona\u0027s Seafood Restaurant - Bonuan Gueset",
+        "neighborhood":  "Bonuan Gueset, Dagupan City",
+        "address":  "Bonuan Gueset, Dagupan City",
+        "description":  "A seafood restaurant listed in the Bonuan Gueset area.",
+        "imageUrl":  "images/representative/simeonas-seafood-bonuan.jpg",
+        "venueImageUrl":  "images/representative/simeonas-seafood-bonuan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  250,
+        "priceMax":  1000,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "seafood"
+                       ],
+        "highlights":  [
+                           "Seafood"
+                       ],
+        "hours":  "Check the source for current hours.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0672997,
+        "longitude":  120.3351498,
+        "sourceUrl":  "https://www.foodpanda.ph/city/dagupan-pangasinan"
+    },
+    {
+        "id":  29,
+        "slug":  "jcv-pigar-pigar-galvan",
+        "name":  "JCV Pigar Pigar - Galvan Street",
+        "neighborhood":  "Galvan Street, Dagupan City",
+        "address":  "50 Galvan Street, Dagupan City",
+        "description":  "A Galvan Street food listing for rice dishes, including pigar-pigar.",
+        "imageUrl":  "images/representative/jcv-pigar-pigar-galvan.jpg",
+        "venueImageUrl":  "images/representative/jcv-pigar-pigar-galvan.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  145,
+        "priceMax":  450,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Pigar-pigar",
+                           "Rice dishes"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0413397,
+        "longitude":  120.3366291,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/w9en/jcv-pigar-pigar-galvan-street"
+    },
+    {
+        "id":  30,
+        "slug":  "lots-foodhouse-shawarma-burgos",
+        "name":  "Lot\u0027s Foodhouse and Shawarma - Burgos Street",
+        "neighborhood":  "Dagupan City",
+        "address":  "Burgos Street, Dagupan City",
+        "description":  "A Burgos Street food listing for shawarma and foodhouse meals.",
+        "imageUrl":  "images/representative/lots-foodhouse-shawarma-burgos.jpg",
+        "venueImageUrl":  "images/representative/lots-foodhouse-shawarma-burgos.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  100,
+        "priceMax":  240,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat"
+                       ],
+        "highlights":  [
+                           "Shawarma",
+                           "Filipino meals"
+                       ],
+        "hours":  "Check the source for current hours and dine-in service.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0342266,
+        "longitude":  120.3379087,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/y0oh/lots-foodhouse-and-shawarma-burgos-street"
+    },
+    {
+        "id":  31,
+        "slug":  "rubis-restaurant-arellano",
+        "name":  "Rubis Restaurant - Arellano Street",
+        "neighborhood":  "Dagupan City",
+        "address":  "Arellano Street, Dagupan City",
+        "description":  "A Dagupan restaurant and bakeshop listed on Arellano Street.",
+        "imageUrl":  "images/representative/rubis-restaurant-arellano.jpg",
+        "venueImageUrl":  "images/representative/rubis-restaurant-arellano.jpg",
+        "rating":  0,
+        "reviewCount":  0,
+        "priceMin":  150,
+        "priceMax":  400,
+        "priceLevel":  "Contact venue",
+        "categories":  [
+                           "meat",
+                           "dessert"
+                       ],
+        "highlights":  [
+                           "Restaurant",
+                           "Bakeshop"
+                       ],
+        "hours":  "Check the source for current hours.",
+        "isOpen":  true,
+        "featured":  false,
+        "status":  "approved",
+        "latitude":  16.0495707,
+        "longitude":  120.3417039,
+        "sourceUrl":  "https://www.foodpanda.ph/restaurant/pyo3/rubis-restaurant-arellano-street"
+    }
 ]
