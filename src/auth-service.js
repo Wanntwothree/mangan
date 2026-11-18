@@ -75,7 +75,7 @@ function createAuthService(database) {
   };
 
   return {
-    seedAdmin(emailInput, password) {
+    seedAdmin(emailInput, password, { enforcePassword = false } = {}) {
       const email = normalizeEmail(emailInput);
       if (!email && !password) return;
       if (!validEmail(email) || typeof password !== "string" || password.length < 8 || password.length > 128) {
@@ -85,6 +85,10 @@ function createAuthService(database) {
       if (existing) {
         if (existing.role !== "admin") {
           throw new Error("ADMIN_EMAIL is already registered as a non-admin account; refusing to elevate it.");
+        }
+        if (enforcePassword && !passwordMatches(password, existing.password_hash)) {
+          statements.updatePassword.run(hashPassword(password), email);
+          console.log("Updated the MANGAN administrator password from configuration.");
         }
         return;
       }

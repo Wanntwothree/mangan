@@ -270,9 +270,11 @@ function createApp(options = {}) {
   const weather = options.weatherService || createWeatherService();
   const publicGeocodeLimits = new Map();
   const geocodeRateLimits = new Map();
+  const configuredAdminPassword = process.env.ADMIN_PASSWORD;
   auth.seedAdmin(
     process.env.ADMIN_EMAIL || "admin@mangan.com",
-    process.env.ADMIN_PASSWORD || "admin_123"
+    configuredAdminPassword || "admin_123",
+    { enforcePassword: Boolean(configuredAdminPassword) }
   );
 
   const server = http.createServer(async (request, response) => {

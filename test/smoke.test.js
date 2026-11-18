@@ -143,6 +143,52 @@ test("fresh database accepts the documented default admin credentials", async ()
   }
 });
 
+test("a configured admin password is enforced on an existing database", async () => {
+  const enforceDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "mangan-admin-enforce-"));
+  const enforceDatabasePath = path.join(enforceDirectory, "test.sqlite");
+  const originalAdminEmail = process.env.ADMIN_EMAIL;
+  const originalAdminPassword = process.env.ADMIN_PASSWORD;
+  const login = async (url, password) => fetch(`${url}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: "enforce-admin@example.test", password })
+  });
+  let firstApp;
+  let secondApp;
+  try {
+    process.env.ADMIN_EMAIL = "enforce-admin@example.test";
+    process.env.ADMIN_PASSWORD = "First!Password2026";
+    firstApp = createApp({ databasePath: enforceDatabasePath, weatherService });
+    await new Promise((resolve) => firstApp.server.listen(0, "127.0.0.1", resolve));
+    const firstUrl = `http://127.0.0.1:${firstApp.server.address().port}`;
+    assert.equal((await login(firstUrl, "First!Password2026")).status, 200);
+
+    await new Promise((resolve) => firstApp.server.close(resolve));
+    firstApp.database.close();
+    firstApp = null;
+
+    process.env.ADMIN_PASSWORD = "Second!Password2026";
+    secondApp = createApp({ databasePath: enforceDatabasePath, weatherService });
+    await new Promise((resolve) => secondApp.server.listen(0, "127.0.0.1", resolve));
+    const secondUrl = `http://127.0.0.1:${secondApp.server.address().port}`;
+    assert.equal((await login(secondUrl, "Second!Password2026")).status, 200);
+    assert.equal((await login(secondUrl, "First!Password2026")).status, 401);
+  } finally {
+    if (originalAdminEmail === undefined) delete process.env.ADMIN_EMAIL;
+    else process.env.ADMIN_EMAIL = originalAdminEmail;
+    if (originalAdminPassword === undefined) delete process.env.ADMIN_PASSWORD;
+    else process.env.ADMIN_PASSWORD = originalAdminPassword;
+    for (const instance of [firstApp, secondApp]) {
+      if (!instance) continue;
+      if (instance.server.listening) {
+        await new Promise((resolve) => instance.server.close(resolve));
+      }
+      instance.database.close();
+    }
+    fs.rmSync(enforceDirectory, { recursive: true, force: true });
+  }
+});
+
 test("restaurant list supports category, search, and sorting", async () => {
   const all = await fetch(`${baseUrl}/api/restaurants`).then((response) => response.json());
   assert.equal(all.restaurants.length, 31);

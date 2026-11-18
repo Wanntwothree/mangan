@@ -63,7 +63,10 @@ a hosted database/object storage for permanent data.
 - Keep SQLite on a persistent volume (`DATABASE_PATH`) or move to a hosted
   database using the existing repository adapter.
 - Set unique `ADMIN_EMAIL` / `ADMIN_PASSWORD` values. Never expose the local
-  default `admin@mangan.com` / `admin_123` credentials publicly.
+  default `admin@mangan.com` / `admin_123` credentials publicly. When
+  `ADMIN_PASSWORD` is set, it is authoritative: on every start the configured
+  password is applied to the admin account, so changing the Render environment
+  variable and redeploying is enough to rotate it.
 - Configure email delivery before enabling `/api/auth/forgot` in production;
   it intentionally returns `503` until then.
 - Set `GEOCODER_USER_AGENT` and `WEATHER_USER_AGENT` with contact details, and
