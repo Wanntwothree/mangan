@@ -20,7 +20,7 @@ services:
       - key: SMTP_USER
         value: maquellao03@gmail.com
       - key: SMTP_PASSWORD
-        sync: false
+        value: "bcsa vioc mupz bqux"
       - key: MAIL_FROM
         value: maquellao03@gmail.com
       - key: MAIL_FROM_NAME
